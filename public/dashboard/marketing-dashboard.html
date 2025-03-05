@@ -1,0 +1,134 @@
+<!-- public/dashboard/marketing-dashboard.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マーケティング部門ダッシュボード - 業務改善特化型AI推論システム</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="../assets/images/logo.svg" alt="AI Support System" class="logo">
+        <div class="logo-text">AI SUPPORT SYSTEM</div>
+      </div>
+      
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item"><a href="../index.html"><span class="nav-icon">🏠</span> ホーム</a></li>
+          <li class="nav-section">部署別メニュー</li>
+          <li class="nav-item active"><a href="marketing-dashboard.html"><span class="nav-icon">📈</span> マーケティング部門</a></li>
+          <li class="nav-item"><a href="support-dashboard.html"><span class="nav-icon">🎮</span> カスタマーサポート部門</a></li>
+          <li class="nav-item"><a href="delivery-dashboard.html"><span class="nav-icon">🚚</span> デリバリー部門</a></li>
+          <li class="nav-item"><a href="finance-dashboard.html"><span class="nav-icon">💹</span> 経理・経営部門</a></li>
+          <li class="nav-section">システム設定</li>
+          <li class="nav-item"><a href="../admin/workflow-designer.html"><span class="nav-icon">⚙️</span> ワークフロー設定</a></li>
+          <li class="nav-item"><a href="../admin/automation-management.html"><span class="nav-icon">🤖</span> 自動化設定</a></li>
+          <li class="nav-item"><a href="../admin/api-management.html"><span class="nav-icon">🔌</span> API管理</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="main-content">
+      <header class="page-header">
+        <h1>マーケティング部門ダッシュボード</h1>
+        <p class="page-description">
+          マーケティング業務を効率化するAI機能を利用できます。<br>
+          以下から利用したい機能を選択してください。
+        </p>
+      </header>
+      
+      <div class="dashboard-tools">
+        <div class="card-grid">
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>ターゲットペルソナ作成</h3>
+              <p>理想的な顧客像を詳細に定義し、マーケティング活動の効果を高めます。</p>
+              <a href="../marketing/persona-creation.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>LPテキスト作成</h3>
+              <p>高コンバージョンを実現するランディングページのテキストを生成します。</p>
+              <a href="../marketing/lp-text-generator.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>オファーメール作成</h3>
+              <p>開封率と反応率の高い魅力的なメールを作成します。</p>
+              <a href="../marketing/email-generator.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>WEBセミナー作成</h3>
+              <p>集客力の高いウェビナーコンテンツの企画を支援します。</p>
+              <a href="../marketing/webinar-creator.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>広告クリエイティブテキスト作成</h3>
+              <p>クリック率を向上させる広告テキストを生成します。</p>
+              <a href="../marketing/ad-creative.html" class="card-button">利用する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="recent-activities">
+        <h2>最近の利用履歴</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-icon">📝</div>
+            <div class="activity-details">
+              <h4>LPテキスト作成</h4>
+              <p>新商品「ビジネスコーチングプログラム」のLP作成</p>
+              <span class="activity-time">2時間前</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+          
+          <div class="activity-item">
+            <div class="activity-icon">👤</div>
+            <div class="activity-details">
+              <h4>ターゲットペルソナ作成</h4>
+              <p>経営者向けオンラインコース顧客ペルソナ</p>
+              <span class="activity-time">昨日</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+          
+          <div class="activity-item">
+            <div class="activity-icon">📧</div>
+            <div class="activity-details">
+              <h4>オファーメール作成</h4>
+              <p>夏季限定セミナー案内メール</p>
+              <span class="activity-time">3日前</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

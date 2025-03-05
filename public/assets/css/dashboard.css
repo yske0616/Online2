@@ -1,0 +1,204 @@
+/* public/assets/css/dashboard.css */
+/* ダッシュボード固有のスタイル */
+
+.dashboard-tools {
+  margin-bottom: 40px;
+}
+
+.tool-card {
+  border-top: 4px solid var(--marketing-color);
+}
+
+.recent-activities {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+}
+
+.recent-activities h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.activity-item:hover {
+  background-color: #f0f0f0;
+}
+
+.activity-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.activity-details {
+  flex: 1;
+}
+
+.activity-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.activity-details p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.activity-time {
+  color: #999;
+  font-size: 12px;
+}
+
+.activity-actions {
+  margin-left: 20px;
+}
+
+.action-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.action-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* LLM選択ツール */
+.llm-selector {
+  background-color: white;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.llm-selector label {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.llm-selector select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.llm-selector .model-info {
+  font-size: 13px;
+  color: #666;
+  margin-left: auto;
+}
+/* public/assets/css/dashboard.css に追加 */
+
+/* 自動化フロー */
+.integration-panel {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.integration-panel h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.integration-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: var(--border-radius);
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.flow-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.flow-content h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.flow-content p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.flow-arrow {
+  font-size: 20px;
+  color: #999;
+}
+
+.integration-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* 支援部門カード特別スタイル */
+.card.support h3::after {
+  background-color: var(--support-color);
+}
+
+.tool-card {
+  border-top: 4px solid var(--support-color);
+}
+
+@media (max-width: 768px) {
+  .integration-flow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin: 5px 0;
+  }
+}

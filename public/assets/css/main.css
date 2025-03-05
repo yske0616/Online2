@@ -1,0 +1,265 @@
+/* public/assets/css/main.css */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --accent-color: #2ecc71;
+  --dark-bg: #20232a;
+  --light-bg: #ffffff;
+  --text-color: #333333;
+  --text-light: #ffffff;
+  --sidebar-width: 250px;
+  --header-height: 60px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --border-radius: 8px;
+  
+  /* 部門カラー */
+  --marketing-color: #3498db;
+  --support-color: #2ecc71;
+  --delivery-color: #e74c3c;
+  --finance-color: #f39c12;
+  --workflow-color: #9b59b6;
+  --automation-color: #1abc9c;
+  --api-color: #34495e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* サイドバー */
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  padding: 20px 0;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.logo-container {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
+  padding: 0 10px;
+}
+
+.nav-item {
+  margin-bottom: 5px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+  background-color: var(--primary-color);
+}
+
+.nav-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.nav-section {
+  padding: 15px 15px 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+}
+
+/* メインコンテンツ */
+.main-content {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 30px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--dark-bg);
+}
+
+.page-description {
+  color: #666;
+  max-width: 800px;
+}
+
+/* カードグリッド */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: var(--light-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.card h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.feature-list {
+  margin-bottom: 20px;
+}
+
+.feature-list li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li::before {
+  content: '✓';
+  margin-right: 10px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.card-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* 部門別カードスタイル */
+.card.marketing h3::after {
+  background-color: var(--marketing-color);
+}
+.card.support h3::after {
+  background-color: var(--support-color);
+}
+.card.delivery h3::after {
+  background-color: var(--delivery-color);
+}
+.card.finance h3::after {
+  background-color: var(--finance-color);
+}
+.card.workflow h3::after {
+  background-color: var(--workflow-color);
+}
+.card.automation h3::after {
+  background-color: var(--automation-color);
+}
+.card.api h3::after {
+  background-color: var(--api-color);
+}
+
+.advanced-features h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: var(--dark-bg);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

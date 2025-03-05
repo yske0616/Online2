@@ -1,0 +1,175 @@
+<!-- public/dashboard/support-dashboard.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カスタマーサポート部門ダッシュボード - 業務改善特化型AI推論システム</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="logo-container">
+        <img src="../assets/images/logo.svg" alt="AI Support System" class="logo">
+        <div class="logo-text">AI SUPPORT SYSTEM</div>
+      </div>
+      
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item"><a href="../index.html"><span class="nav-icon">🏠</span> ホーム</a></li>
+          <li class="nav-section">部署別メニュー</li>
+          <li class="nav-item"><a href="marketing-dashboard.html"><span class="nav-icon">📈</span> マーケティング部門</a></li>
+          <li class="nav-item active"><a href="support-dashboard.html"><span class="nav-icon">🎮</span> カスタマーサポート部門</a></li>
+          <li class="nav-item"><a href="delivery-dashboard.html"><span class="nav-icon">🚚</span> デリバリー部門</a></li>
+          <li class="nav-item"><a href="finance-dashboard.html"><span class="nav-icon">💹</span> 経理・経営部門</a></li>
+          <li class="nav-section">システム設定</li>
+          <li class="nav-item"><a href="../admin/workflow-designer.html"><span class="nav-icon">⚙️</span> ワークフロー設定</a></li>
+          <li class="nav-item"><a href="../admin/automation-management.html"><span class="nav-icon">🤖</span> 自動化設定</a></li>
+          <li class="nav-item"><a href="../admin/api-management.html"><span class="nav-icon">🔌</span> API管理</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="main-content">
+      <header class="page-header">
+        <h1>カスタマーサポート部門ダッシュボード</h1>
+        <p class="page-description">
+          カスタマーサポート業務を効率化するAI機能を利用できます。<br>
+          以下から利用したい機能を選択してください。
+        </p>
+      </header>
+      
+      <div class="dashboard-tools">
+        <div class="card-grid">
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>FAQ自動生成</h3>
+              <p>商品やサービスに関するよくある質問と回答を自動生成します。</p>
+              <a href="../customer-support/faq-generator.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>カスタマー対応スクリプト作成</h3>
+              <p>状況別の適切な対応スクリプトを生成します。</p>
+              <a href="../customer-support/response-script.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>入金管理・シート管理</h3>
+              <p>スプレッドシートを活用した入金管理を効率化します。</p>
+              <a href="../customer-support/sheet-manager.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>MyASP連携</h3>
+              <p>フォーム作成と顧客データの連携を自動化します。</p>
+              <a href="../customer-support/myasp-integration.html" class="card-button">利用する</a>
+            </div>
+          </div>
+          
+          <div class="card tool-card">
+            <div class="card-content">
+              <h3>問い合わせ自動処理</h3>
+              <p>問い合わせフォームからの入力を自動分析し、適切な返信を生成します。</p>
+              <a href="../customer-support/form-processor.html" class="card-button">利用する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="integration-panel">
+        <h2>自動化フロー</h2>
+        <div class="integration-flow">
+          <div class="flow-step">
+            <div class="flow-icon">📝</div>
+            <div class="flow-content">
+              <h4>フォーム入力</h4>
+              <p>お客様がフォームに情報を入力</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">🔍</div>
+            <div class="flow-content">
+              <h4>顧客情報把握</h4>
+              <p>AIが顧客情報を分析</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">✉️</div>
+            <div class="flow-content">
+              <h4>返信メール作成</h4>
+              <p>最適な返信内容を生成</p>
+            </div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">📤</div>
+            <div class="flow-content">
+              <h4>自動送信</h4>
+              <p>作成したメールを送信</p>
+            </div>
+          </div>
+        </div>
+        <div class="integration-actions">
+          <button class="primary-button">新規フロー作成</button>
+          <button class="secondary-button">既存フロー編集</button>
+        </div>
+      </div>
+      
+      <div class="recent-activities">
+        <h2>最近の利用履歴</h2>
+        <div class="activity-list">
+          <div class="activity-item">
+            <div class="activity-icon">📋</div>
+            <div class="activity-details">
+              <h4>FAQ自動生成</h4>
+              <p>新サービス「ビジネスサポートプラン」のFAQ作成</p>
+              <span class="activity-time">3時間前</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+          
+          <div class="activity-item">
+            <div class="activity-icon">💬</div>
+            <div class="activity-details">
+              <h4>対応スクリプト作成</h4>
+              <p>返金要求への対応マニュアル</p>
+              <span class="activity-time">昨日</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+          
+          <div class="activity-item">
+            <div class="activity-icon">🔄</div>
+            <div class="activity-details">
+              <h4>問い合わせ自動処理</h4>
+              <p>お問い合わせ自動返信テンプレート設定</p>
+              <span class="activity-time">2日前</span>
+            </div>
+            <div class="activity-actions">
+              <button class="action-btn">再利用</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>
