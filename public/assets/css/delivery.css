@@ -1,0 +1,140 @@
+/* public/assets/css/delivery.css */
+.card.delivery h3::after {
+  background-color: var(--delivery-color);
+}
+
+.tool-card {
+  border-top: 4px solid var(--delivery-color);
+}
+
+.course-analytics {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.analytics-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analytics-value {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: var(--delivery-color);
+}
+
+.analytics-label {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.analytics-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* コメントリスト関連のスタイル */
+.recent-comments {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.recent-comments h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-item {
+  background-color: #f9f9f9;
+  border-radius: var(--border-radius);
+  padding: 15px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.comment-user {
+  font-weight: 500;
+}
+
+.comment-course {
+  color: #666;
+  font-size: 14px;
+}
+
+.comment-time {
+  color: #999;
+  font-size: 12px;
+}
+
+.comment-content {
+  margin-bottom: 15px;
+}
+
+.comment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.action-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.action-btn.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.action-btn.secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.view-more {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .course-analytics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .comment-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
